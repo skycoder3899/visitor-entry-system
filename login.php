@@ -30,9 +30,9 @@
 	<h1>Login</h1>
 	<form class="container" name="lo" onsubmit="return validateForm()" action="Registration.php" method="post">
 		<label ><b>Username</b></label>
-		<input type="text" placeholder="Username" name="Username">
+		<input type="text" placeholder="Username" name="Username"><!--username is admin-->
 		<label ><b>Password</b></label>
-		<input type="password" placeholder="Password" name="psw">
+		<input type="password" placeholder="Password" name="psw"><!--Password is admin-->
 		<button type="submit" class="btn">Login</button>
 	</form>
 </div>
