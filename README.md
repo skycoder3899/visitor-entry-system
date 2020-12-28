@@ -1,1 +1,2 @@
 # visitor-entry-system
+A dynamic visitor entry system where the employees of a particular company/organization gets informed through sms about a visitor who is visiting him/her. The idea is simple as when the visitor goes to the place of the company, he/she needs to fill out the basic details for the visitor form. After the details of the vistor has been added, a sms is send to the particular employee whom the visitor wants to meet. Also, the employee may send a response message back to the vistor informing the visitor about status of employee's schedule. 
