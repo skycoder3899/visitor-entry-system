@@ -69,7 +69,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     $mail->Password = '';                           // SMTP password
                     $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
                     $mail->Port = 587;                                    // TCP port to connect to
-                    $mail->setFrom('davidnit817@gmail.com', 'VIZHOST');
+                    $mail->setFrom('', 'VIZHOST');
                     $mail->addAddress($email_id, $name);     // Add a recipient
                     $mail->isHTML(true);                                  // Set email format to HTML
                     $mail->Subject = 'Visitor e-Pass';
