@@ -65,11 +65,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     $mail->isSMTP();                                      // Set mailer to use SMTP
                     $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
                     $mail->SMTPAuth = true;                               // Enable SMTP authentication
-                    $mail->Username = 'davidnit817@gmail.com';                 // SMTP username
-                    $mail->Password = 'david1@2';                           // SMTP password
+                    $mail->Username = '';                 // SMTP username
+                    $mail->Password = '';                           // SMTP password
                     $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
                     $mail->Port = 587;                                    // TCP port to connect to
-                    $mail->setFrom('davidnit817@gmail.com', 'VIZHOST');
+                    $mail->setFrom('', 'VIZHOST');
                     $mail->addAddress($email_id, $name);     // Add a recipient
                     $mail->isHTML(true);                                  // Set email format to HTML
                     $mail->Subject = 'Visitor e-Pass';
@@ -109,11 +109,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     $mail->isSMTP();                                      // Set mailer to use SMTP
                     $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
                     $mail->SMTPAuth = true;                               // Enable SMTP authentication
-                    $mail->Username = 'davidnit817@gmail.com';                 // SMTP username
-                    $mail->Password = 'david1@2';                           // SMTP password
+                    $mail->Username = '';                 // SMTP username
+                    $mail->Password = '';                           // SMTP password
                     $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
                     $mail->Port = 587;                                    // TCP port to connect to
-                    $mail->setFrom('davidnit817@gmail.com', 'VIZHOST');
+                    $mail->setFrom('', 'VIZHOST');
                     $mail->addAddress($host_email, $host_name);     // Add a recipient
                     $mail->isHTML(true);                                  // Set email format to HTML
                     $mail->Subject = 'Visitor Notification';
