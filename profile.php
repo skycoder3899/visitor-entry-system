@@ -112,8 +112,8 @@ if($_SESSION["basic_status"] != 'done'){
                 <li class="list-group-item">
                   <b>Address</b><br> <a><?php echo $profile_details['address']; ?></a>
                 </li>
+
               </ul>
-              <button href="#" id="set_status" class="btn btn-primary btn-block"><b><?php if($profile_details['e_stats']=='available') echo 'Available'; else echo 'Unavailable';?></b></button>
             </div>
             <!-- /.box-body -->
           </div>
@@ -124,7 +124,7 @@ if($_SESSION["basic_status"] != 'done'){
         <div class="col-md-9">
           <div class="nav-tabs-custom">
             <ul class="nav nav-tabs">
-              <li class=""><a>Visitors Details</a></li>
+              <li class=""><a href="#profile">Visitors Details</a></li>
             </ul>
             <div class="tab-content">
               <div class="active tab-pane" id="profile">
@@ -163,24 +163,6 @@ $(document).ready( function () {
       fetch_data();  
   });
 </script>  
-<script>
-$(document).ready(function(){
-  $("#set_status").click(function(){
-                $("#set_status").prop('disabled', true);
-                $.ajax({
-                type: 'POST',
-                url: 'gears/gear_set_status.php',
-                data: { e_id: <?php echo $_SESSION["e_id"]; ?> },
-                success: function(response){
-                        $("#set_status").html(response);
-                },
-                complete: function(){
-                    $("#set_status").prop('disabled', false);
-                }
-            });
-  });
-});
-</script>
 </body>
 
 </html>

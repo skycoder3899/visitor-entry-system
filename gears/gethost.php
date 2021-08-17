@@ -1,7 +1,7 @@
 <?php
 include "../cores/inc/config.php";
 $host_department_id= intval($_GET['host_department_id']);
-$sql="SELECT * FROM `employee_tbl` WHERE `department_id`='".$host_department_id."' AND `e_stats`='available'";
+$sql="SELECT * FROM `employee_tbl` WHERE `department_id`='".$host_department_id."' AND `e_stats`='active'";
 if ($result = mysqli_query($link,$sql)) {
     echo "<select>";
     echo '<option value='.' '.'selected disabled'.'>'.'Select Host Name'.'</option>';

@@ -64,20 +64,8 @@ if($stmt = mysqli_prepare($link, $sql)){
                     }
                     if($email_status != 'done')
                         echo 10;
-                    else{
-                        $sql = "UPDATE `employee_tbl` SET `e_stats`= 'unavailable' WHERE `e_id`= '$e_id' ";
-                        if(mysqli_query($link, $sql)){
-                            if(mysqli_affected_rows($link)==0){
-                                $sql = "UPDATE `employee_tbl` SET `e_stats`= 'available' WHERE `e_id`= '$e_id' ";
-                                if(mysqli_query($link, $sql)){
-                                    if(mysqli_affected_rows($link)>0){
-                                        echo 1;
-                                    }
-                                }
-                            }            
-                        }                        
-                        
-                    }                           
+                    else    
+                        echo 1;
                 }else{
                     echo 2;
                 }

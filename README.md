@@ -5,9 +5,9 @@ This system is usually used in places where a large number of visitors come and 
 
 # Requirements-
 
-We need an application, which can capture the name of the visitor, his/her email address, his/her phone no., his/her purpose ,
-host department which he is visiting, and also, host name.
-At the back end, once the user enters the information in the form, the backend will store all of the information with time stamp of the entry.
+We need an application, which can capture the name, email address, phone no., purpose of the visitor and
+host department, host name needs to be captured for the host on the front end.
+At the back end, once the user enters the information in the form, the backend should store all of the information with time stamp of the entry.
 This should trigger an e-pass which will be mailed to the visitor and also, a notification email to the host informing him of the details of the visitor.
 There should also be a provision for the visitor to check-out easily.
 
@@ -66,6 +66,6 @@ Password- admin@123
 
 1) This is a <b>responsive and dynamic website</b> and will work on all devices.
 
-2) This website is built with HTML, CSS, JavaScript, Bootstrap, jQuery, PHP, MySQL. We have also used the template provided by https://adminlte.io/?2.
+2) This website is built with HTML, CSS, Javascript, Bootstrap, jQuery AJAX, PHP, SQL, MySQL.
 
 3) You can have a visit of our website at <i> http://visitor.infinityfreeapp.com </i>.
