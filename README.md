@@ -58,6 +58,9 @@ Steps given shows the working of website:
 ![Profile](https://user-images.githubusercontent.com/71785870/118769160-7ce9b780-b89d-11eb-89de-933bf8590534.jpeg)
 
 
+# Admin Credentials-
+Email id- admin@gmail.com <br/>
+Password- admin@123
 
 # Features-
 
